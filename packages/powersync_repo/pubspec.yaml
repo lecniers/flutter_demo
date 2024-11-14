@@ -1,0 +1,28 @@
+name: powersync_repo
+description: A package that manages connection to the PowerSync cloud service and database.
+version: 0.1.0+1
+publish_to: none
+
+environment:
+  sdk: ^3.5.0
+  flutter: ^3.24.0
+
+dependencies:
+  _bom:
+    path: ../_bom
+  _core:
+    path: ../_core
+  _env:
+    path: ../_env
+  flutter:
+    sdk: flutter
+  path:
+  path_provider:
+  powersync:
+  supabase_flutter:
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  mocktail: ^1.0.4
+  very_good_analysis: ^6.0.0

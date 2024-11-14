@@ -1,0 +1,92 @@
+import 'package:powersync/powersync.dart';
+
+/// Global schema in local async SQLite database.
+const schema = Schema([
+  Table('images', [
+    Column.text('owner_id'),
+    Column.text('url'),
+    Column.text('blur_hash'),
+  ]),
+  Table('videos', [
+    Column.text('owner_id'),
+    Column.text('url'),
+    Column.text('first_frame_url'),
+    Column.text('blur_hash'),
+  ]),
+  Table('posts', [
+    Column.text('user_id'),
+    Column.text('caption'),
+    Column.text('created_at'),
+    Column.text('updated_at'),
+    Column.text('media'),
+  ]),
+  Table('likes', [
+    Column.text('post_id'),
+    Column.text('user_id'),
+    Column.text('comment_id'),
+  ]),
+  Table('comments', [
+    Column.text('post_id'),
+    Column.text('user_id'),
+    Column.text('content'),
+    Column.text('created_at'),
+    Column.text('replied_to_comment_id'),
+  ]),
+  Table('stories', [
+    Column.text('user_id'),
+    Column.text('content_type'),
+    Column.text('content_url'),
+    Column.integer('duration'),
+    Column.text('created_at'),
+    Column.text('expires_at'),
+  ]),
+  Table('profiles', [
+    Column.text('full_name'),
+    Column.text('email'),
+    Column.text('username'),
+    Column.text('avatar_url'),
+    Column.text('push_token'),
+  ]),
+  Table('subscriptions', [
+    Column.text('subscriber_id'),
+    Column.text('subscribed_to_id'),
+  ]),
+  Table('participants', [
+    Column.text('user_id'),
+    Column.text('conversation_id'),
+  ]),
+  Table('messages', [
+    Column.text('conversation_id'),
+    Column.text('from_id'),
+    Column.text('type'),
+    Column.text('message'),
+    Column.text('reply_message_id'),
+    Column.text('created_at'),
+    Column.text('updated_at'),
+    Column.integer('is_read'),
+    Column.integer('is_deleted'),
+    Column.integer('is_edited'),
+    Column.text('reply_message_username'),
+    Column.text('reply_message_attachment_url'),
+    Column.text('shared_post_id'),
+  ]),
+  Table('attachments', [
+    Column.text('message_id'),
+    Column.text('title'),
+    Column.text('text'),
+    Column.text('title_link'),
+    Column.text('image_url'),
+    Column.text('thumb_url'),
+    Column.text('author_name'),
+    Column.text('author_link'),
+    Column.text('asset_url'),
+    Column.text('og_scrape_url'),
+    Column.text('type'),
+  ]),
+  Table('conversations', [
+    Column.text('type'),
+    Column.text('name'),
+    Column.text('created_at'),
+    Column.text('updated_at'),
+  ]),
+]);

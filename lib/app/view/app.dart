@@ -1,4 +1,4 @@
-import 'package:demo_app/counter/counter.dart';
+import 'package:demo_app/auth/login/view/login_page.dart';
 import 'package:demo_app/l10n/l10n.dart';
 import 'package:flutter/material.dart';
 
@@ -8,7 +8,7 @@ class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      // debugShowCheckedModeBanner: false,
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         appBarTheme: AppBarTheme(
           backgroundColor: Theme.of(context).colorScheme.inversePrimary,
@@ -17,7 +17,7 @@ class App extends StatelessWidget {
       ),
       localizationsDelegates: AppLocalizations.localizationsDelegates,
       supportedLocales: AppLocalizations.supportedLocales,
-      home: const CounterPage(),
+      home: const LoginPage(),
     );
   }
 }

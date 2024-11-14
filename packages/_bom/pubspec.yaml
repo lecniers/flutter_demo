@@ -1,0 +1,57 @@
+name: _bom
+description: Bill of Materials
+version: 0.1.0+1
+publish_to: none
+
+environment:
+  sdk: ^3.5.0
+  flutter: ^3.24.0
+
+dependencies:
+  bloc: ^8.1.4
+  bloc_concurrency: ^0.2.5
+  collection: ^1.18.0
+  dartz: ^0.10.1
+  dio: ^5.7.0
+  envied: ^0.5.4+1
+  equatable: ^2.0.5
+  firebase_core: ^3.8.0
+  flutter:
+    sdk: flutter
+  flutter_bloc: ^8.1.6
+  flutter_localization: ^0.2.2
+  flutter_svg: ^2.0.14
+  formz: ^0.8.0
+  freezed_annotation: ^2.4.4
+  get_it: ^8.0.2
+  google_sign_in: ^6.2.2
+  http_parser: ^4.0.2
+  intl: ^0.19.0
+  jiffy: ^6.3.1
+  json_annotation: ^4.9.0
+  logger: ^2.4.0
+  mime: ^1.0.6
+  path: ">=1.8.3 <=1.9.0"
+  path_provider: ^2.1.5
+  powersync: ^1.10.0
+  retrofit: ^4.4.1
+  supabase_flutter: ^2.3.4
+  super_icons: ^1.0.3
+  uuid: ^4.5.1
+
+dev_dependencies:
+  bloc_test: ^9.1.7
+  build_runner: ^2.4.13
+  dart_style: ^2.0.0
+  envied_generator: ^0.5.4+1
+  flutter_gen_runner: ^5.3.1
+  flutter_lints: ^2.0.0
+  flutter_test:
+    sdk: flutter
+  freezed: ^2.5.7
+  json_serializable: ^6.8.0
+  mockingjay: ^0.5.0
+  mocktail: ^1.0.4
+  retrofit_generator: ">=8.0.0 <10.0.0" # for Dart 3.3 use ^9.0.0
+  test: ^1.19.2
+  very_good_analysis: ^6.0.0

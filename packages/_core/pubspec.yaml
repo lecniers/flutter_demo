@@ -1,0 +1,26 @@
+name: _core
+description: A package for utils, extensions, converters...
+version: 0.1.0+1
+publish_to: none
+
+environment:
+  sdk: ^3.5.0
+  flutter: ^3.24.0
+
+dependencies:
+  _bom:
+    path: ../_bom
+  flutter:
+    sdk: flutter
+  http_parser:
+  intl:
+  jiffy:
+  logger:
+  mime:
+  uuid:
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  mocktail:
+  very_good_analysis:
